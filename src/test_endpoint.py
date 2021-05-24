@@ -12,8 +12,8 @@ ROOT_DIR = os.getcwd()
 endpoint = 'dev-fmnist-v4-deployment'
 endpoint_url = 'https://runtime.sagemaker.ap-southeast-1.amazonaws.com/endpoints/dev-fmnist-v4-deployment/invocations'
 local_url = 'http://127.0.0.1:5000/predict'
-auth = AWS4Auth('AKIAVR5S2FYGFLZAG2Z5',
-                'V4qkYxGEtsG1j2Bo+v6UQi8rBw7UAoz70kToJOsK', 'ap-southeast-1', 'sagemaker')
+auth = AWS4Auth('',
+                '', 'ap-southeast-1', 'sagemaker')
 headers = {'Content-type': 'image/png'}
 runtime = boto3.Session().client(service_name='sagemaker-runtime')
 
