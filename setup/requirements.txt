@@ -1,0 +1,16 @@
+bentoml
+tensorflow==1.14.0
+scikit-learn
+joblib==0.13.2
+scipy==1.5.4
+numpy
+pandas==1.1.3
+matplotlib
+keras==2.3.1
+pillow
+pytest==6.1.2
+pytest-cov==2.10.1
+h5py==2.10.0
+sagemaker
+imageio
+requests-aws4auth

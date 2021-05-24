@@ -1,0 +1,41 @@
+{
+    "namespace": "dev",
+    "name": "fmnist-deployment",
+    "spec": {
+        "bentoName": "KerasFashionMnistService",
+        "bentoVersion": "20210522203853_8D23CD",
+        "operator": "AWS_SAGEMAKER",
+        "sagemakerOperatorConfig": {
+            "region": "ap-southeast-1",
+            "instanceType": "ml.m4.xlarge",
+            "instanceCount": 1,
+            "apiName": "predict",
+            "timeout": 60,
+            "dataCaptureSamplePercent": 100
+        }
+    },
+    "state": {
+        "infoJson": {
+            "EndpointName": "dev-fmnist-deployment",
+            "EndpointArn": "arn:aws:sagemaker:ap-southeast-1:382090227212:endpoint/dev-fmnist-deployment",
+            "EndpointConfigName": "dev-fmnist-deplo-KerasFashionMnistService-20210522203853-8D23CD",
+            "EndpointStatus": "Creating",
+            "CreationTime": "2021-05-23 14:33:37.678000+08:00",
+            "LastModifiedTime": "2021-05-23 14:33:37.678000+08:00",
+            "ResponseMetadata": {
+                "RequestId": "7e690bd5-1663-4ef7-8de5-92bc278c0fee",
+                "HTTPStatusCode": 200,
+                "HTTPHeaders": {
+                    "x-amzn-requestid": "7e690bd5-1663-4ef7-8de5-92bc278c0fee",
+                    "content-type": "application/x-amz-json-1.1",
+                    "content-length": "316",
+                    "date": "Sun, 23 May 2021 06:43:36 GMT"
+                },
+                "RetryAttempts": 0
+            }
+        },
+        "timestamp": "2021-05-23T06:43:36.877835Z"
+    },
+    "createdAt": "2021-05-23T06:33:09.928042Z",
+    "lastUpdatedAt": "2021-05-23T06:33:09.928073Z"
+}
